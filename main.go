@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/coderx31/puppy"
 )
 
 type ByteSize int
@@ -59,6 +61,12 @@ func main() {
 	// 25. hands on exercise
 	//printMeasures()
 	//printMeasureSolution()
+
+	// dependency management
+	s1 := puppy.Bark()
+	s2 := puppy.Barks()
+	fmt.Println(s1)
+	fmt.Println(s2)
 
 }
 
